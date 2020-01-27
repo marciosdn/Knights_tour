@@ -17,8 +17,8 @@ void jump(int step, int x, int y) {
 	if (!T[x][y]) {    //If 0, it can walk.
 		T[x][y] = step++;
 		if (step>SIZEx*SIZEy) {    //Is it finished, last step?
-		    printf("\nSolution: %d\n", sol++);
-		    printT();    //print it!
+			printf("\nSolution: %d\n", sol++);
+			printT();    //print it!
 		} else {
 			for(int k=0;k<8;k++)    //Try 8 directions.
 			if (x+Sx[k]>-1 && y+Sy[k]>-1 && x+Sx[k]<SIZEx && y+Sy[k]<SIZEy)
